@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Web luchi launcher</title>
+        <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="shortcut icon" href="New Piskel.png">
+       
+    </head>
+
+    
+    <div style="position: absolute; top: 60px; left: 100px;">
+        <img src="New Piskel.png" class="cohete" style="width: 130px; height: 130px;">
+      </div>
+    
+    <div id="weather-container" style="position: absolute; top: 95px; left: 73%;">
+        <img id="weather-image" src="default.png" style="width: 90px; height: 90px;">
+        <p id="weather-description"></p>
+      </div>
+   
+
+    
+    <body> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="internet-status"></div>
+    <div id="time"></div>
+    <div id="weather"></div>
+    <div style="width: 50%; float: left; margin-top: 95px; margin-left: 30px; border: 4px solid  rgb(255, 70, 224); border-radius: 15px;">
+    <h1>Webs <button id="mas">+</button></h1>
+    <button onclick="window.open('https://www.youtube.com/', '_blank')"> ytb</button>
+    <button onclick="window.open('https://190.225.183.34/wiki/index.html#/base', '_blank')"> Wiki tbx</button>
+    <button onclick="window.open('https://chat.openai.com/chat', '_blank')"> Chat GPT</button>
+    <button onclick="window.open('https://outlook.office.com/mail/', '_blank')"> mail </button>
+    <button onclick="window.open('https://tecocloud.atlassian.net/jira/software/c/projects/TBX/boards/998?quickFilter=1693', '_blank')"> Jira </button>
+    <button onclick="window.open('https://www.accessbanking.com.ar/RetailHomeBankingWeb/init.do', '_blank')"> ICBC </button>
+    <button onclick="window.open('https://toolbox.telecom.com.ar/toolbox/dbmplus/index.html#/', '_blank')"> DBM  </button>
+    <button onclick="window.open('https://www.argentina.gob.ar/interior/feriados-nacionales-2023', '_blank')"> calendario  </button>
+    <button onclick="window.open('https://web2.0calc.es/', '_blank')"> calcu  </button>
+    <button onclick="window.open('https://www.office.com/?auth=2', '_blank')"> 365  </button>
+    <br>
+    
+    <form id="nuevo-boton">
+        <br>
+        <label style="font-family: 'Press Start 2P', cursive; color:  rgb(255, 70, 224); font-size: 12px;">Name:</label>
+        <input type="text" class="chatgpt-cursor" id="nombre" style="background-color: #6d4969a6; color:  rgb(255, 70, 224); font-family: 'Press Start 2P', cursive; padding: 10px 20px; border: 3px solid rgb(255, 70, 224); animation: blink-caret 0.5s step-end infinite; outline: none; font-size: 12px;">
+        <label style="font-family: 'Press Start 2P', cursive; color:  rgb(255, 70, 224); font-size: 12px;">URL:</label>
+        <input type="text" class="chatgpt-cursor" id="url" style="background-color: #6d4969a6; color:  rgb(255, 70, 224); font-family: 'Press Start 2P', cursive; padding: 10px 20px; border: 3px solid rgb(255, 70, 224); animation: blink-caret 0.5s step-end infinite; outline: none; font-size: 12px;">
+        <br>
+        <br>
+        <input type="submit" value="add" style="background-color: #6d4969a6; color:  rgb(255, 70, 224); font-family: 'Press Start 2P', Arial, sans-serif; padding: 10px 20px; border: 2px solid rgb(255, 70, 224); font-size: 12px;">
+        <br>
+        </form>
+    <br>
+    <div id="webContainer"></div>
+    <script src="script.js"></script>
+    <br>
+    <br>
+</div>
+    <br>
+    <br>
+<div style="width: 43%; float: right; margin-top: 60px; margin-right: 30px; border: 4px solid  rgb(255, 70, 224); border-radius: 15px; ">
+    <h1>Post it <button id="btnAddSticker">+</button></h1>
+    <form id="formSticker" style="display: none;">
+        <label style="font-family: 'Press Start 2P', cursive; color:  rgb(255, 70, 224); font-size: 12px;">Detail:</label>
+        <input type="text" id="txtSticker" maxlength="100" class="chatgpt-cursor" style="background-color: #6d4969a6; color:  rgb(255, 70, 224); font-family: 'Press Start 2P', cursive; padding: 10px 20px; border: 3px solid  rgb(255, 70, 224); animation: blink-caret 0.5s step-end infinite; outline: none; font-size: 12px;">
+        <br>
+        <br>
+        <button type="submit" id="btnSubmitSticker">Add Sticker</button>
+        <br>
+        <br>
+    </form>
+    <div id="stickersContainer"></div>
+    <script src="script2.js"></script>
+    <br>
+    <br>
+</div>
+    </body>
+</html>

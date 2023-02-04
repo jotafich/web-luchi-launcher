@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {  font-family: "Arcade Classic";  src: url("./Arcade Classic.ttf");  }
+@font-face {  font-family: "Arcade Boxes";  src: url("./Arcade Boxes.ttf");  }
+@font-face {  font-family: "ARCADE_I";  src: url("./ARCADE_I.TTF");  }
+@font-face {  font-family: "PPixel";  src: url("./PublicPixel.ttf");  }
+
+
+body {
+    background-color: #c09fbca6; /*color de fondo*/
+    color: rgb(255, 70, 224); /*color del texto*/
+    font-family: 'Press Start 2P', Arial, sans-serif; /*tipo de fuente*/
+    text-align: center; /*alineación del texto*/
+    position: relative; /*posición relativa del contenido*/
+  }
+
+  
+  h1 {
+    font-family: "ARCADE_I";
+    color: rgb(255, 70, 224); /*color del texto*/
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    }
+  
+#time, #weather {
+  font-family: 'Press Start 2P', Arial, sans-serif;
+    position: relative;
+    top: 20px;
+    right: 20;
+    text-align: center;
+    margin: 10px;
+}
+#time {
+    font-size: 20px;
+    color: rgb(255, 70, 224); /*color del texto*/
+}
+#weather {
+    font-size: 15px;
+    color:  rgba(255, 70, 224, 0.692);
+}
+
+button {
+   
+    background-color: #6d4969a6; /*color de fondo del botón*/
+    color: rgb(255, 70, 224); /*color del texto*/
+    font-family: 'Press Start 2P', Arial, sans-serif; /*tipo de fuente del botón*/
+    padding: 12px 12px; /*espaciado del botón*/
+    border: 2px solid  rgb(255, 70, 224); /*borde del botón*/
+    margin: 10px 3px;
+    font-size: 12px;
+    text-align: center;
+    position: relative; 
+    }
+
+button:hover {
+        background-color: rgb(255, 70, 224); /*color de fondo al pasar el cursor sobre el botón*/
+        color: #6d4969a6; /*color del texto al pasar el cursor sobre el botón*/
+        cursor: pointer; /*cursor al pasar sobre el botón*/
+    }
+
+      
+form {
+  display: none;
+}
+
+.chatgpt-cursor::selection {
+    background: rgb(255, 70, 224);
+    width: 2px;
+}
+
+#internet-status {
+  font-family: 'Press Start 2P', Arial, sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 9.5px;
+}
+
+#stickersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sticker {
+    background-color: #6d4969a6; /*color de fondo del botón*/
+    color: rgb(255, 70, 224); /*color del texto del botón*/
+    border-radius: 1px;
+    padding: 1px 5px;
+    margin: 10px 5px;
+    border: 2px solid rgb(255, 70, 224); /*borde del botón*/
+    text-align: center;
+    font-size: 12px;
+  }
+
+
+  
+  
